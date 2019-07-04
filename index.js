@@ -16,7 +16,7 @@ massive(CONNECTION_STRING)
 app.use(express.json()); 
 
 app.post('/api/products', ctrl.create); 
-app.get('/api/products',ctrl.getAll); 
+app.get('/api/product',ctrl.getAll); 
 app.get('/api/products/:id', ctrl.getOne); 
 app.post('/api/products/:ID', ctrl.update); 
 app.delete('/api/products/:id', ctrl.delete); 
